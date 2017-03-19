@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace NetStandard.Library
+namespace NetStandard.Ref
 {
     public class Class1
     {

@@ -45,6 +45,7 @@
     <PlatformTarget>x86</PlatformTarget>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhoneSimulator' ">
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\iPhoneSimulator\Release</OutputPath>
@@ -109,9 +110,13 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\NetStandard.Library\NetStandard.Library.csproj">
-      <Project>{C83A60AE-5A08-468F-8980-C35D5F562BCE}</Project>
-      <Name>NetStandard.Library</Name>
+    <ProjectReference Include="..\PCL.Ref\PCL.Ref.csproj">
+      <Project>{6E92A05A-7F67-447E-B3AD-272B7002E71E}</Project>
+      <Name>PCL.Ref</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\NetStandard.Ref\NetStandard.Ref.csproj">
+      <Project>{340ECD0A-2E54-4D9F-A75C-B35D04AB0DDD}</Project>
+      <Name>NetStandard.Ref</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />

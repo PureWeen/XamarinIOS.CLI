@@ -1,5 +1,6 @@
 ﻿using Foundation;
 using UIKit;
+using PCL.Ref;
 
 namespace XamarinIOS.CLI
 {
@@ -10,6 +11,7 @@ namespace XamarinIOS.CLI
 	{
 		// class-level declarations
 
+		MyClass theClass = new MyClass();
 		public override UIWindow Window
 		{
 			get;
@@ -21,6 +23,7 @@ namespace XamarinIOS.CLI
 			// Override point for customization after application launch.
 			// If not required for your application you can safely delete this method
 
+			theClass.Dispose();
 			return true;
 		}
 
